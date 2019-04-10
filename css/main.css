@@ -101,6 +101,12 @@ textarea {
  /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+.content-wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
 /*********** Base Header - Footer Styles ***********/
 
 header, footer {
@@ -112,16 +118,22 @@ header, footer {
 
 /*** Header styles ***/
 
+header {
+  padding: 15px 0;
+}
 
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-content: center;
   flex-flow: row wrap;
+  margin: 0;
 }
 
 .header-divider {
-
+  width: 100%;
+  height: 1px;
+  margin: 10px 0 20px 0;
 }
 
 header nav {
@@ -129,14 +141,25 @@ header nav {
  justify-content: space-around;
  align-items: center;
  flex-flow: row wrap;
+ width: 60%;
 }
 
 header nav ul {
   display: flex;
   justify-content: space-around;
+  width: 45%;
 }
 
 /*** Footer styles ***/
+
+footer .content-wrapper {
+  width: 55%;
+  margin: 50px 0;
+}
+
+footer .contact {
+  margin-bottom: 50px;
+}
 
 footer .social-icons {
   display: flex;
@@ -144,10 +167,14 @@ footer .social-icons {
   align-items: center;
 }
 
-footer .social {
+footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+footer .copyright {
+  margin: 20px 0;
 }
 
 
@@ -156,9 +183,10 @@ footer .social {
 .hero-area {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-flow: row wrap;
 }
+
+/*** Aside ***/
 
 aside {
   display: flex;
@@ -167,10 +195,21 @@ aside {
   flex-flow: row wrap;
 }
 
+/*** Features ***/
+
 .features {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 55%;
+  margin: 30px 0;
 }
 
 .features .features-items {
@@ -180,10 +219,25 @@ aside {
   flex-flow: row wrap;
 }
 
+.features p {
+  margin: 0;
+}
+
+/*** Reviews ***/
+
 .reviews {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
 }
 
 /**********  About page *********/
@@ -195,11 +249,17 @@ aside {
   flex-flow: row wrap;
 }
 
+/*** Contact ***/
+
 .contact-section {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.contact-content p {
+  margin: 0;
 }
 
 
@@ -217,6 +277,15 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0 0 0;
+}
+
+.faq h2 {
+  margin-bottom: 40px;
+}
+
+.faq-content {
+  margin-bottom: 50px;
 }
 
 
