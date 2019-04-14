@@ -147,7 +147,7 @@ img {
 }
 
 figure {
-
+  margin: 0;
 }
 
 address {
@@ -181,6 +181,14 @@ header .content-wrapper {
   align-content: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -247,12 +255,16 @@ footer .copyright {
 /*********** Mobile Styles - Homepage ***********/
 
 .hero-area {
+  background: url(../img/hero-image.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
 }
 
-.hero-area .content-wrapper h1 {
+.hero-area h1 {
   font-size: 2.25em;
 }
 
@@ -294,6 +306,9 @@ input[type=button] {
 /*** Features ***/
 
 .features {
+  background: url(../img/features-background.jpg);
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -494,6 +509,16 @@ input[type=button] {
       margin: 100px 0;
     }
 
+    h2 {
+      font-size: 2.25em;
+      line-height: 1.333;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
+    }
+
     /* Header */
     header {
       justify-content: space-around;
@@ -502,6 +527,10 @@ input[type=button] {
     header .content-wrapper {
       width: 100%;
       justify-content: space-between;
+    }
+
+    header figure {
+      width: 30%;
     }
 
     header nav {
@@ -552,7 +581,16 @@ input[type=button] {
       justify-content: space-between;
     }
 
-    .reviews article div {
+    .reviews h2 {
+      width: 90%
+    }
+
+    .reviews h3 {
+      width: 75%;
+      margin: 0;
+    }
+
+    .reviews article div, .reviews article figure {
       width: 49%;
     }
 
@@ -570,6 +608,15 @@ input[type=button] {
 
     footer .contact {
       margin-bottom: 0;
+    }
+
+    footer h4 {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+
+    footer p {
+      line-height: 1.285;
     }
 
     footer .copyright {
@@ -598,6 +645,10 @@ input[type=button] {
       align-items: flex-start;
     }
 
+    .contact-content h4 {
+      font-size: 1.5em;
+    }
+
     /**** FAQ page ****/
 
     .faq .content-wrapper {
@@ -610,6 +661,11 @@ input[type=button] {
 
     .faq h2 {
         width: 100%;
+    }
+
+    .faq h4, .faq p {
+      font-size: 0.875em;
+      line-height: 1.125;
     }
   }
 
