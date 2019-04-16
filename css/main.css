@@ -763,11 +763,11 @@ input[type=button] {
 
     .hero-area h1 {
       font-size: 3.75em;
-      width: 60%;
+      width: 80%;
     }
 
     .hero-area .content-wrapper {
-      margin: 50px 0;
+      margin: 20px 0 50px 0;
     }
 
     /*** Aside ***/
